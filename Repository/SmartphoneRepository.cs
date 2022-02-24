@@ -19,17 +19,36 @@ namespace ApiStoreWeb.Repository
             smartphone = _context.Set<Smartphone>();
         }
 
-        public void addAll(Smartphone phone)
+        public async Task addNewPhone(Smartphone phone)
         {
-            _context.Entry(phone).State = EntityState.Added;
-            _context.SaveChanges();
+            _context.smartphones.Add(phone);
+            await _context.SaveChangesAsync();
+
+        }
+        public async Task<Smartphone> findById(int id)
+        {
+            var phone = await _context.smartphones.FindAsync(id);
+            return phone;
+
         }
 
         public async Task<IEnumerable<Smartphone>> findAll()
         {
-        
+
             return await _context.smartphones.ToListAsync();
-            
+
+        }
+
+        public async Task updatePhone(Smartphone phone)
+        {
+            _context.Update(phone);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task deletePhone(Smartphone phone)
+        {
+            _context.smartphones.Remove(phone);
+            await _context.SaveChangesAsync();
         }
     }
 }

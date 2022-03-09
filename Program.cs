@@ -1,12 +1,13 @@
 using ApiStoreWeb.Models.Context;
 using ApiStoreWeb.Repository;
+using ApiStoreWeb.Repository.PurchaseRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<ISmartphoneRepository, SmartphoneRepository>();
+builder.Services.AddScoped<IPurchaseRepository, PurchaseRepository>();
 
-        
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<SmartphoneContext>(options =>
 {

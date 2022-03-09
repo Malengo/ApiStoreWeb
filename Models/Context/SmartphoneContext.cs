@@ -1,4 +1,3 @@
-using ApiStoreWeb.Models.Entites;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -11,11 +10,10 @@ namespace ApiStoreWeb.Models.Context
         }
 
         public DbSet<Smartphone> smartphones { get; set; }
-        public DbSet<Purchase> purchase { get; set; }
+        public DbSet<Purchase> purchases { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
             modelBuilder.Entity<Smartphone>().ToTable("smartphone");
             modelBuilder.Entity<Purchase>().ToTable("purchase");
         }

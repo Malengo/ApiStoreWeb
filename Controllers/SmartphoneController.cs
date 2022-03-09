@@ -74,7 +74,7 @@ namespace ApiStoreWeb.Controllers
             try
             {
                 await _repository.updatePhone(phone);
-                return Ok("Foi");
+                return Ok();
             }
             catch (System.Exception e)
             {

@@ -10,7 +10,7 @@ namespace ApiStoreWeb.Models.Entites
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [ForeignKey("smartphoneId")]
+        [ForeignKey("Id")]
         public virtual Smartphone smartphoneId { get; set; }
         public DateTime dayPurchase { get; set; }
         public double valuePurchase { get; set; }

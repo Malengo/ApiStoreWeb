@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ApiStoreWeb.Models
+namespace ApiStoreWeb.Models.Entites
 {
     public class Purchase
 
@@ -9,6 +9,7 @@ namespace ApiStoreWeb.Models
         public Purchase(int idPurchase, DateTime dayPurchase, double valuePurchase)
         {
             IdPurchase = idPurchase;
+            
             this.dayPurchase = dayPurchase;
             this.valuePurchase = valuePurchase;
         }
@@ -17,7 +18,7 @@ namespace ApiStoreWeb.Models
         public int IdPurchase { get; set; }
 
         [ForeignKey("Id")]
-        public virtual Smartphone smartphoneId { get; set; }
+        public Smartphone smartphoneId { get; set; }
         public DateTime dayPurchase { get; set; }
         public double valuePurchase { get; set; }
 

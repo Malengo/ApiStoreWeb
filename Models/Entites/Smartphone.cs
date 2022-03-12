@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace ApiStoreWeb.Models
+namespace ApiStoreWeb.Models.Entites
 {
     public class Smartphone
     {

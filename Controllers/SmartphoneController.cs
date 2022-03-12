@@ -1,5 +1,6 @@
 using System.Net;
 using ApiStoreWeb.Models;
+using ApiStoreWeb.Models.Entites;
 using ApiStoreWeb.Repository;
 using Microsoft.AspNetCore.Mvc;
 

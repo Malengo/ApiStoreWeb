@@ -1,7 +1,5 @@
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using ApiStoreWeb.Models;
 using ApiStoreWeb.Models.Context;
+using ApiStoreWeb.Models.Entites;
 using Microsoft.EntityFrameworkCore;
 
 

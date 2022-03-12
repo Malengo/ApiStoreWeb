@@ -1,4 +1,5 @@
 using ApiStoreWeb.Models;
+using ApiStoreWeb.Models.Entites;
 
 namespace ApiStoreWeb.Repository.PurchaseRepository
 {

@@ -1,6 +1,7 @@
 using ApiStoreWeb.Models.Context;
 using ApiStoreWeb.Models;
 using Microsoft.EntityFrameworkCore;
+using ApiStoreWeb.Models.Entites;
 
 namespace ApiStoreWeb.Repository.PurchaseRepository
 {

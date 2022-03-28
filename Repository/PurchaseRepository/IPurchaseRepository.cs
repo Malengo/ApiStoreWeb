@@ -5,6 +5,6 @@ namespace ApiStoreWeb.Repository.PurchaseRepository
 {
     public interface IPurchaseRepository
     {
-        Task addNewPhone(Purchase purchase);
+        Task addNewPurchase(Purchase purchase);
     }
 }

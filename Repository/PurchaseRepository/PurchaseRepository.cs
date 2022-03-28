@@ -17,7 +17,7 @@ namespace ApiStoreWeb.Repository.PurchaseRepository
         }
 
 
-        public async Task addNewPhone(Purchase purchase)
+        public async Task addNewPurchase(Purchase purchase)
         {
             _context.purchases.Add(purchase);
             await _context.SaveChangesAsync();
